@@ -39,9 +39,9 @@ This project focuses on **real-time object detection** in football matches — s
 
 | Item            | Detail                       |
 |-----------------|------------------------------|
-| Model           | YOLOv8x                      |
+| Model           | YOLOv11                      |
 | Framework       | PyTorch (via Ultralytics)    |
-| Reason Chosen   | Highest accuracy variant of YOLOv8 – ideal for detailed object detection tasks |
+| Reason Chosen   | Latest version of YOLO |
 
 ---
 
@@ -50,10 +50,10 @@ This project focuses on **real-time object detection** in football matches — s
 | Parameter       | Value             |
 |-----------------|-------------------|
 | Platform        | Google Colab      |
-| GPU             | NVIDIA RTX 3060 6GB |
+| GPU             | GPU T4 |
 | Epochs          | 50                |
-| Batch Size      | 3                 |
-| RAM Usage       | ~4.5 GB           |
+| Batch Size      | 9                 |
+| RAM Usage       | ~11.5 GB           |
 | Validation Set  | 49 Images         |
 | Detected Objects| 1,174 Instances   |
 
@@ -63,10 +63,10 @@ This project focuses on **real-time object detection** in football matches — s
 
 | Metric         | Value  |
 |----------------|--------|
-| Precision (Box P) | 0.931 |
-| Recall (R)         | 0.818 |
-| mAP@0.5           | 0.900 |
-| mAP@0.5:0.95      | 0.627 |
+| Precision (Box P) | 0.907 |
+| Recall (R)         | 0.742 |
+| mAP@0.5           | 0.81 |
+| mAP@0.5:0.95      | 0.544 |
 
 ---
 
@@ -76,15 +76,8 @@ This project focuses on **real-time object detection** in football matches — s
 - **Deployment Mode**: Localhost (Test Phase)
 - **Features**:
   - Upload match video
-  - Process video with YOLOv8x
+  - Process video with YOLOv11
   - Return annotated video with bounding boxes
-
----
-
-## 🔗 Demo & Resources
-
-- 📓 **Colab Notebook**: [Open in Colab](#) *(insert your link here)*
-- 🎥 **Detection Sample Video**: [Watch the result](#) *(insert your link here)*
 
 ---
 
@@ -102,7 +95,7 @@ This project focuses on **real-time object detection** in football matches — s
 ## 🧰 Tech Stack
 
 - [Python](https://www.python.org/)
-- [YOLOv8 by Ultralytics](https://github.com/ultralytics/ultralytics)
+- [YOLOv11 by Ultralytics](https://github.com/ultralytics/ultralytics)
 - [Django](https://www.djangoproject.com/)
 - [OpenCV](https://opencv.org/)
 - [Roboflow](https://roboflow.com/)
