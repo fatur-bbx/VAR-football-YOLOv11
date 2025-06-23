@@ -1,6 +1,6 @@
-# ⚽ Football Player Detection using YOLOv8x
+# ⚽ Football Player Detection using YOLOv11
 
-> Real-time detection of football players, referees, goalkeepers, and the ball using the powerful YOLOv8x model — built on a custom-labeled dataset and deployed with Django.
+> Real-time detection of football players, referees, goalkeepers, and the ball using the powerful YOLOv11 model — built on a custom-labeled dataset, deployed with Flask and HuggingFace.
 
 ---
 
@@ -50,7 +50,7 @@ This project focuses on **real-time object detection** in football matches — s
 | Parameter       | Value             |
 |-----------------|-------------------|
 | Platform        | Google Colab      |
-| GPU             | GPU T4 |
+| GPU             | GPU A100 |
 | Epochs          | 50                |
 | Batch Size      | 9                 |
 | RAM Usage       | ~11.5 GB           |
@@ -72,12 +72,12 @@ This project focuses on **real-time object detection** in football matches — s
 
 ## 🚀 Deployment
 
-- **Backend**: Django
-- **Deployment Mode**: Localhost (Test Phase)
+- **Backend**: Flask
+- **Deployment Mode**: HuggingFace Space on "faturbbx/football-player-detection"
 - **Features**:
-  - Upload match video
+  - Upload match image
   - Process video with YOLOv11
-  - Return annotated video with bounding boxes
+  - Return annotated image with bounding boxes
 
 ---
 
@@ -87,8 +87,8 @@ This project focuses on **real-time object detection** in football matches — s
 - ✅ Model Trained
 - ✅ Model Evaluated
 - ✅ Video Detection Working
-- ✅ Django App Running
-- 🔄 Final Step: Integrate detection visualization to web interface
+- ✅ Flask App Running
+- ✅ Final Step: Integrate detection visualization to web interface in Huggingface
 
 ---
 
@@ -96,7 +96,7 @@ This project focuses on **real-time object detection** in football matches — s
 
 - [Python](https://www.python.org/)
 - [YOLOv11 by Ultralytics](https://github.com/ultralytics/ultralytics)
-- [Django](https://www.djangoproject.com/)
+- [HuggingFace Space](https://huggingface.co/spaces/faturbbx/football-player-detection)
 - [OpenCV](https://opencv.org/)
 - [Roboflow](https://roboflow.com/)
 - [Jupyter Notebook](https://jupyter.org/)
@@ -107,5 +107,5 @@ This project focuses on **real-time object detection** in football matches — s
 
 1. **Clone this repository**
    ```bash
-   git clone https://github.com/faturbbx/VAR-football-YOLOv9.git
-   cd VAR-football-YOLOv9
+   git clone https://github.com/faturbbx/VAR-football-YOLOv11.git
+   cd VAR-football-YOLOv11
