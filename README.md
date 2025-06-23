@@ -8,7 +8,7 @@
 
 In modern football, data is power. The ability to detect players automatically from match footage unlocks new possibilities: tactical analysis, spatial player positioning, and even lightweight VAR systems.
 
-This project focuses on **real-time object detection** in football matches — specifically identifying players, goalkeepers, referees, and the ball from video footage.
+This project focuses on **real-time object detection** in football matches — specifically identifying players, goalkeepers, referees, and the ball from image footage.
 
 > 🔸 Note: This project is currently focused on **detection**, not **tracking** across frames.
 
@@ -16,7 +16,7 @@ This project focuses on **real-time object detection** in football matches — s
 
 ## 🎯 Goals
 
-- 🎥 Detect players and key match elements from football videos.
+- 🎥 Detect players and key match elements from football images.
 - 🧠 Utilize the YOLOv8x model for high-accuracy object detection under various lighting and camera angles.
 - 🌐 Deploy the model in a Django-based web interface.
 - ✅ Visualize bounding boxes on detected objects in real time.
@@ -76,7 +76,7 @@ This project focuses on **real-time object detection** in football matches — s
 - **Deployment Mode**: HuggingFace Space on "faturbbx/football-player-detection"
 - **Features**:
   - Upload match image
-  - Process video with YOLOv11
+  - Process image with YOLOv11
   - Return annotated image with bounding boxes
 
 ---
@@ -86,7 +86,7 @@ This project focuses on **real-time object detection** in football matches — s
 - ✅ Dataset Prepared
 - ✅ Model Trained
 - ✅ Model Evaluated
-- ✅ Video Detection Working
+- ✅ Image Detection Working
 - ✅ Flask App Running
 - ✅ Final Step: Integrate detection visualization to web interface in Huggingface
 
